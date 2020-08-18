@@ -1,0 +1,8 @@
+[package]
+name = "redistls"
+version = "0.1.0"
+authors = ["michael-grunder <michael.grunder@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+redis = { version = "0.17", features = ["tls", "async-std-tls-comp", "tokio-tls-comp"] }
